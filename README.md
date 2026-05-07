@@ -20,7 +20,7 @@ dependencies:
 Import the package:
 
 ```dart
-import 'package:soaring_logging/swiftful_logging.dart';
+import 'package:soaring_logging/soaring_logging.dart';
 ```
 
 Create an instance of `LogManager` with one or more services:

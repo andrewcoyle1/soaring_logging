@@ -23,7 +23,7 @@ enum LogSystemType {
 class DeveloperLogSystem implements LogSystem {
   @override
   void log({required LogType level, required String message}) {
-    developer.log(message, name: 'SwiftfulLogging', level: _levelValue(level));
+    developer.log(message, name: 'SoaringLogging', level: _levelValue(level));
   }
 
   int _levelValue(LogType level) {

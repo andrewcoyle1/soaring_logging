@@ -1,4 +1,4 @@
-import 'package:swiftful_logging/swiftful_logging.dart';
+import 'package:soaring_logging/soaring_logging.dart';
 import 'package:test/test.dart';
 
 void main() {

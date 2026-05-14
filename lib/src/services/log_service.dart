@@ -1,3 +1,4 @@
+import '../models/log_type.dart';
 import '../models/loggable_event.dart';
 
 abstract class LogService {
@@ -17,4 +18,11 @@ abstract class LogService {
   void trackEvent(LoggableEvent event);
 
   void trackScreenView(LoggableEvent event);
+
+  void log({
+    required String message,
+    LogType type = LogType.info,
+    Object? error,
+    StackTrace? stackTrace,
+  });
 }

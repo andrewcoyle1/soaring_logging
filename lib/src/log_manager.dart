@@ -60,4 +60,15 @@ class LogManager {
       service.deleteUserProfile();
     }
   }
+
+  void log({
+    required String message,
+    LogType type = LogType.info,
+    Object? error,
+    StackTrace? stackTrace,
+  }) {
+    for (final service in _services) {
+      service.log(message: message, type: type, error: error, stackTrace: stackTrace);
+    }
+  }
 }

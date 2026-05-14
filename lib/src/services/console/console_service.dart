@@ -61,4 +61,17 @@ class ConsoleService implements LogService {
   void deleteUserProfile() {
     _logger.log(level: LogType.info, message: '📈 Delete User Profile');
   }
+
+  @override
+  void log({
+    required String message,
+    LogType type = LogType.info,
+    Object? error,
+    StackTrace? stackTrace,
+  }) {
+    var output = '${type.emoji} $message';
+    if (error != null) output += '\n    error: $error';
+    if (stackTrace != null) output += '\n    $stackTrace';
+    _logger.log(level: type, message: output);
+  }
 }

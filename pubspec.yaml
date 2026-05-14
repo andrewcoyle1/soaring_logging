@@ -1,6 +1,6 @@
 name: soaring_logging
 description: A plugin-based logging framework for Flutter/Dart applications. Provides a unified interface for integrating multiple logging services.
-version: 1.0.0
+version: 1.0.2
 repository: https://github.com/andrewcoyle1/soaring_logging
 
 environment:
